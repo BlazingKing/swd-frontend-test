@@ -96,6 +96,19 @@
   font-size: 12px;
 }
 
+.staggeredContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.rowContainer {
+  width: 100%;
+}
+
 .move-shape {
   background-color: #ffa200;
   &:hover {

@@ -36,9 +36,6 @@ export default function FormPage() {
     (state: RootState) => state.person.selectedIds
   );
 
-  console.log(selectedIds);
-  
-
   const onFinish = (values: Person) => {
     if (values.id) {
       dispatch(

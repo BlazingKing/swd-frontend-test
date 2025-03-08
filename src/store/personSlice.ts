@@ -21,9 +21,13 @@ interface PersonState {
 }
 
 const loadFromLocalStorage = (): Person[] => {
-  const data = localStorage.getItem("persons");
-  return data ? JSON.parse(data) : [];
+  if (typeof window !== "undefined") {
+    const data = localStorage.getItem("persons");
+    return data ? JSON.parse(data) : [];
+  }
+  return [];
 };
+
 
 const saveToLocalStorage = (persons: Person[]) => {
   localStorage.setItem("persons", JSON.stringify(persons));
