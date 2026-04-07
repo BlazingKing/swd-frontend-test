@@ -1,0 +1,31 @@
+@use "@/styles/variables" as *;
+
+.page {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-xl $spacing-lg;
+}
+
+.card {
+  text-align: center;
+  border-radius: $border-radius-lg;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+}
+
+.testLabel {
+  font-size: 13px;
+  color: $color-text-muted;
+  margin-bottom: $spacing-xs;
+}
+
+.testTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: $color-text;
+}

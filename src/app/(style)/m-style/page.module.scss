@@ -1,0 +1,65 @@
+@use "@/styles/variables" as *;
+
+.page {
+  padding: $spacing-xl $spacing-lg;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.titleLayout {
+  margin-bottom: $spacing-lg;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  color: $color-text;
+}
+
+.buttonLayout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $spacing-lg;
+  margin-bottom: $spacing-xl;
+}
+
+.buttonbg {
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+  padding: $spacing-sm $spacing-md;
+  border-radius: $border-radius;
+  background: $color-white;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.15s;
+
+  &:hover {
+    background: #fafafa;
+  }
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 14px solid $color-text;
+}
+
+.bage {
+  font-size: 13px;
+  color: $color-text;
+}
+
+.staggeredContainer {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+}
+
+.rowContainer {
+  width: 100%;
+}
