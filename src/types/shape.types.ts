@@ -1,1 +1,1 @@
-export type ShapeName = "triangle" | "square" | "circle" | "oval" | "trapezoid-left" | "trapezoid-right";
+export type ShapeName = "triangle" | "square" | "rectangle" | "circle" | "oval" | "trapezoid-right" | "trapezoid";

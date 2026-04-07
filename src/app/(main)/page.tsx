@@ -14,10 +14,10 @@ export default function HomePage() {
   const { t } = useTranslation();
 
   return (
-    <div className={styles.page}>
-      <Row gutter={[24, 24]} justify="center">
+    <div className={styles.page + " " + styles.gradient}>
+      <Row gutter={[180, 32]} justify="center">
         {TESTS.map(({ key, titleKey, test }) => (
-          <Col key={key} xs={20} sm={10} md={8} lg={6}>
+          <Col key={key} xs={20} sm={10} md={7} lg={5}>
             <Card hoverable className={styles.card} onClick={() => router.push(`/${key}`)}>
               <h3 className={styles.testLabel}>
                 {t("test")} {test}

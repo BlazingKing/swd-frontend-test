@@ -14,18 +14,20 @@ export default function FormPage() {
   usePersist();
 
   return (
-    <main className={styles.page}>
-      <div className={styles.titleLayout}>
-        <h2 className={styles.title}>{t("title2")}</h2>
-      </div>
+    <div className={styles.gradient}>
+      <main className={styles.page + " " + styles.gradient}>
+        <div className={styles.titleLayout}>
+          <h2 className={styles.title}>{t("title2")}</h2>
+        </div>
 
-      <section className={styles.formSection}>
-        <PersonForm formHook={formHook} />
-      </section>
+        <section className={styles.formSection}>
+          <PersonForm formHook={formHook} />
+        </section>
 
-      <section className={styles.tableSection}>
-        <PersonTable formHook={formHook} />
-      </section>
-    </main>
+        <section className={styles.tableSection}>
+          <PersonTable formHook={formHook} />
+        </section>
+      </main>
+    </div>
   );
 }

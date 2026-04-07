@@ -9,7 +9,7 @@ interface ShapeCardProps {
 
 export default function ShapeCard({ shape, onClick }: ShapeCardProps) {
   return (
-    <div className={styles.shapeContainer} onClick={onClick}>
+    <div className={styles.card} onClick={onClick}>
       <div className={classNames(styles.shape, styles[shape])} />
     </div>
   );

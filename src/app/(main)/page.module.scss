@@ -11,21 +11,44 @@
 .card {
   text-align: center;
   border-radius: $border-radius-lg;
-  transition: transform 0.2s ease;
+  border: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  padding: $spacing-lg $spacing-md;
+  min-width: 160px;
+
+  :global(.ant-card-body) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $spacing-sm;
+    padding: $spacing-md;
+  }
 
   &:hover {
-    transform: translateY(-4px);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
   }
 }
 
 .testLabel {
-  font-size: 13px;
+  font-size: 12px;
+  font-weight: 500;
   color: $color-text-muted;
-  margin-bottom: $spacing-xs;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 0;
 }
 
 .testTitle {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 700;
   color: $color-text;
+  line-height: 1.3;
+  margin-bottom: 0;
+}
+
+.gradient {
+  background: linear-gradient(45deg, #6eda78 0%, #ffa200 100%);
+  min-height: calc(100vh - 64px);
 }

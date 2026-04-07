@@ -4,6 +4,7 @@
   padding: $spacing-xl $spacing-lg;
   max-width: 900px;
   margin: 0 auto;
+  min-height: calc(100vh - 64px);
 }
 
 .titleLayout {
@@ -62,4 +63,9 @@
 
 .rowContainer {
   width: 100%;
+}
+
+.gradient {
+  background: linear-gradient(45deg, #6eda78 0%, #ffa200 100%);
+  min-height: calc(100vh - 64px);
 }

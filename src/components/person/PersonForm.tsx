@@ -120,7 +120,7 @@ export default function PersonForm({ formHook }: PersonFormProps) {
           </Col>
           <Col flex="1">
             <Form.Item name="mobile" noStyle rules={[{ required: true }]}>
-              <Input placeholder={t("mobile_phone")} />
+              <Input placeholder={t("mobile_phone")} maxLength={10}/>
             </Form.Item>
           </Col>
         </Row>
