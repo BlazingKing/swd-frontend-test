@@ -1,0 +1,57 @@
+@use "@/styles/variables" as *;
+
+.shapeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  cursor: pointer;
+}
+
+.shape {
+  background-color: $color-primary;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  background: transparent;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 70px solid $color-primary;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.oval {
+  width: 100px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.trapezoid-left {
+  width: 0;
+  height: 0;
+  background: transparent;
+  border-bottom: 70px solid $color-primary;
+  border-left: 0px solid transparent;
+  border-right: 60px solid transparent;
+}
+
+.trapezoid-right {
+  width: 0;
+  height: 0;
+  background: transparent;
+  border-bottom: 70px solid $color-primary;
+  border-left: 60px solid transparent;
+  border-right: 0px solid transparent;
+}
